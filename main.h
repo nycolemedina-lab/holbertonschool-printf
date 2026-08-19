@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <stdarg.h>
+#include <unistd.h>
 
 /**
 * struct specifier - structure to map format specifiers to printer functions
