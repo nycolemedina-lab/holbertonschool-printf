@@ -3,6 +3,7 @@
 
 #include <stdarg.h>
 #include <unistd.h>
+#include <stdio.h>
 
 /**
 * struct specifier - structure to map format specifiers to printer functions

@@ -1,3 +1,4 @@
+
 NAME
 	_printf
 
@@ -8,4 +9,14 @@ SYNOPSIS
 	int _printf(const char *format, ...);
 
 DESCRIPTION
-	
+	_printf
+	function produces output according to a format string, writing to standard output.
+
+	Format Specifiers
+	A conversion specifier is introduced by the % character:
+
+	%c: Print a single character.
+
+	%s: Prints a null-terminated string. If argument is NULL, print "(null)".
+
+	%
