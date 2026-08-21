@@ -20,5 +20,8 @@ int _printf(const char *format, ...);
 
 int _putchar(char c);
 
+int conv_char(va_list args);
+int conv_string(va_list args);
+int conv_perc(va_list args);
 
 #endif
