@@ -23,5 +23,7 @@ int _putchar(char c);
 int conv_char(va_list args);
 int conv_string(va_list args);
 int conv_perc(va_list args);
+int print_num(unsigned int n);
+int conv_int(va_list args);
 
 #endif
