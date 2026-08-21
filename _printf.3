@@ -1,6 +1,6 @@
-.TH _PRINTF 3 "August 2026" "Holberton Coding School" "C Library Functions"
+.TH _PRINTF 3 "August 2026" "Holberton Coding School" "C Library Functions Manual"
 .SH NAME
-_printf \- formatted output conversion
+_printf \- formatted output conversion function
 .SH SYNOPSIS
 .B #include "main.h"
 .PP
@@ -13,17 +13,17 @@ function produces output according to a format string, writing to standard outpu
 A conversion specifier is introduced by the '%' character:
 .TP
 .B %c
-Prints a single character.
+Prints a single ASCII character.
 .TP
 .B %s
-Prints a null-terminated string. If argument is NULL, prints "(null)".
+Prints a null-terminated string. If pointer is NULL, prints "(null)".
 .TP
 .B %%
-Prints a '%' character.
+Prints a literal '%' character.
 .TP
 .B %d, %i
 Prints a signed decimal integer.
 .SH RETURN VALUE
-Returns the number of characters printed (excluding the null byte). Returns -1 if the format string is NULL or if a trailing '%' is encountered.
+Returns the number of characters printed. Returns -1 if the format string is NULL or if a trailing '%' is encountered.
 .SH AUTHORS
 Written by Nycole Medina
