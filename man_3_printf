@@ -1,1 +1,11 @@
-Man page
+NAME
+	_printf
+
+SYNOPSIS
+
+	#include "main.h"
+
+	int _printf(const char *format, ...);
+
+DESCRIPTION
+	
