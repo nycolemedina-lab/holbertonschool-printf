@@ -1,12 +1,10 @@
 #include "main.h"
 
 /**
+* _printf - function produces output acording to a format
+* @format: a string of charecter including the format specifires
 *
-*
-*
-*
-*
-*
+* Return: the number of characters printed
 */
 
 int _printf(const char *format, ...)
@@ -23,7 +21,6 @@ int _printf(const char *format, ...)
 		{"i", conv_int},
 		{NULL, NULL}
 	};
-
 
 	if (format == NULL)
 		return (-1);

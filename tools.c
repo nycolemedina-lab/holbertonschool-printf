@@ -1,12 +1,8 @@
 #include "main.h"
 
-
-
 /**
-*
-*
-*
-*
+* conv_char - prints a character
+* @args: va_list containig character to print
 */
 int conv_char(va_list args)
 {
@@ -18,10 +14,8 @@ int conv_char(va_list args)
 }
 
 /**
-*
-*
-*
-*
+* conv_string - prints a string
+* @args: va_list containig string to print
 */
 int conv_string(va_list args)
 {
@@ -39,11 +33,8 @@ int conv_string(va_list args)
 }
 
 /**
-*
-*
-*
-*
-*
+* conv_perc - prints a '%' character
+* @args: va_list contanig '%'
 */
 int conv_perc(va_list args)
 {
@@ -53,10 +44,8 @@ int conv_perc(va_list args)
 }
 
 /**
-*
-*
-*
-*
+* print_num - prints a number in base 10
+* @args: va_list contaning the numbers to print
 */
 int print_num(unsigned int n)
 {
@@ -69,11 +58,8 @@ int print_num(unsigned int n)
 }
 
 /**
-*
-*
-*
-*
-*
+* conv_int - prints an integer
+* @args: va_list containing numbers to print
 */
 int conv_int(va_list args)
 {
