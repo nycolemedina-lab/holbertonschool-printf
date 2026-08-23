@@ -1,29 +1,32 @@
-.TH _PRINTF 3 "August 2026" "Holberton Coding School" "C Library Functions"
-.SH NAME
-_printf \- formatted output conversion
-.SH SYNOPSIS
-.B #include "main.h"
-.PP
-.BI "int _printf(const char *" format ", ...);"
-.SH DESCRIPTION
-The
-.B _printf()
-function produces output according to a format string, writing to standard output.
-.SS Format Specifiers
-A conversion specifier is introduced by the '%' character:
-.TP
-.B %c
-Prints a single character.
-.TP
-.B %s
-Prints a null-terminated string. If argument is NULL, prints "(null)".
-.TP
-.B %%
-Prints a '%' character.
-.TP
-.B %d, %i
-Prints a signed decimal integer.
-.SH RETURN VALUE
-Returns the number of characters printed (excluding the null byte). Returns -1 if the format string is NULL or if a trailing '%' is encountered.
-.SH AUTHORS
-Written by Nycole Medina
+_PRINTF 3 "August 2026" "Holberton Coding School" "C Library Functions"
+NAME
+	_printf \- formatted output conversion
+
+SYNOPSIS
+	#include "main.h"
+
+	"int _printf(const char *" format ", ...);"
+
+DESCRIPTION
+	The _printf() function produces output according to a format string, writing to standard output.
+
+Format Specifiers
+	A conversion specifier is introduced by the '%' character:
+
+	%c
+	Prints a single character.
+
+	%s
+	Prints a null-terminated string. If argument is NULL, prints "(null)".
+
+	%%
+	Prints a '%' character.
+
+	%d, %i
+	Prints a signed decimal integer.
+
+RETURN VALUE
+	Returns the number of characters printed (excluding the null byte). Returns -1 if the format string is NULL or if a trailing '%' is encountered.
+
+AUTHORS
+	Written by Nycole Medina
