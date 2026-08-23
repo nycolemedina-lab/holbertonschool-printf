@@ -1,12 +1,10 @@
 #include "main.h"
-
 /**
 * _printf - function produces output acording to a format
 * @format: a string of charecter including the format specifires
 *
 * Return: the number of characters printed
 */
-
 int _printf(const char *format, ...)
 {
 	int i = 0, j, matched;
@@ -38,13 +36,11 @@ int _printf(const char *format, ...)
 		{
 			i++;
 
-
 			if (format[i] == '\0')
 			{
 				va_end(args);
 				return (-1);
 			}
-
 			j = 0;
 			matched = 0;
 
@@ -64,11 +60,9 @@ int _printf(const char *format, ...)
 				_putchar(format[i]);
 				count +=2;
 			}
-
 		}
 		i++;
 	}
-
 	va_end(args);
 	return (count);
 }
