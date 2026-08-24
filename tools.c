@@ -1,6 +1,33 @@
 #include "main.h"
 
 /**
+* match_func - matches a specifier character with its conversion function
+* @s: the specifier character
+*
+* Return: pointer to the matching function, or NULL if not found
+*/
+int (*match_func(char s))(va_list)
+{
+	int j = 0;
+	spec_t funcs[] = {
+		{"c", conv_char},
+		{"s", conv_string},
+		{"%", conv_perc},
+		{"d", conv_int},
+		{"i", conv_int},
+		{NULL, NULL}
+	};
+
+	while (funcs[j].spec != NULL)
+	{
+		if (s == funcs[j].spec[0])
+			return (funcs[j].f);
+		j++;
+	}
+	return (NULL);
+}
+
+/**
 * conv_char - prints a character
 * @args: va_list containig character to print
 */
