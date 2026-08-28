@@ -24,3 +24,7 @@ Compile all `.c` files using `gcc`:
 
 ```bash
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o printf
+```
+
+## Author
+* Nycole Medina
